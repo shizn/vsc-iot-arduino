@@ -1,0 +1,64 @@
+{
+  "Az IoT": {
+    "kind": "root",
+    "sub1":
+    {
+      "kind": "node",
+      "hub1":
+      {
+        "kind": "node",
+        "dev1" :
+        {
+          "kind": "leaf",
+          "name" : "sub1_hub1_dev1"
+        },
+        "dev2" :
+        {
+          "kind": "leaf",
+          "name" : "sub1_hub1_dev2"
+        }
+      },
+      "hub2":
+      {
+        "kind": "node",
+        "dev1" :
+        {
+          "kind" : "leaf",
+          "name" : "sub1_hub2_dev1"
+        },
+        "dev2" :
+        {
+          "kind" : "leaf",
+          "name" : "sub1_hub2_dev2"
+        }
+      }
+    },
+    "sub2":
+    {
+      "kind": "node",
+      "hub1":
+      {
+        "kind": "node",
+        "dev1" :
+        {
+          "kind" : "leaf",
+          "name" : "sub2_hub1_dev1"
+        }
+      }
+    },
+    "sub3":
+    {
+      "kind": "node",
+      "hub1":
+      {
+        "kind": "node",
+        "dev1": 
+        {
+          "kind": "leaf",
+          "name": "sub3_hub1_dev1"
+        }
+      }
+    }
+  }
+  
+}
