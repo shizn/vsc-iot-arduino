@@ -6,9 +6,9 @@ export interface IArduinoDebug {
      * @return Children of `node`.
      */
     // arduino --board arduino:avr:nano:cpu=atmega168 --port /dev/ttyACM0 --upload /path/to/sketch/sketch.ino
-    Build(inoPath: string): Array<string> | Thenable<Array<string>>;
+    Build(inoPath: string): Array<any> | Thenable<Array<any>>;
 
-    Upload(inoPath: string): Array<string> | Thenable<Array<string>>;
+    Upload(inoPath: string): Array<any> | Thenable<Array<any>>;
 
     GetPreference(pref: string): Array<any> | Thenable<Array<any>>;
 
