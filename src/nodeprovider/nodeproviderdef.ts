@@ -13,10 +13,7 @@ import { Leaf } from "../treemodel/treedef";
 
 
 export class SampleNodeProvider implements TreeExplorerNodeProvider<TreeNode> {
-  private tree: any;
-  constructor(private path: string) {
-    //const path = "C:\\Work\\Projects\\vscodeext\\vsc-iot-arduino\\test\\tree.json";
-    this.tree = JSON.parse(fs.readFileSync(path, 'utf-8'));
+  constructor() {
   }
 
   getLabel(node: TreeNode): string {

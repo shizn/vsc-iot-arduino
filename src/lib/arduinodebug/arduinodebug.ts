@@ -1,8 +1,11 @@
 import { IArduinoDebug } from './iarduinodebug'
 
+import * as child from 'child_process';
+
+
 // reference: https://github.com/PaulStoffregen/Arduino-1.6.7-Teensyduino/blob/master/build/shared/manpage.adoc
 // normal use: arduino --board arduino:avr:nano:cpu=atmega168 --port /dev/ttyACM0 --upload /path/to/sketch/sketch.ino
-class ArduinoDebug implements IArduinoDebug {
+export class ArduinoDebug implements IArduinoDebug {
     // The path where sketches are (usually) stored. This path can also contain some special subdirectories (see FILES below).
     public arduinoExePath: string;
 
@@ -54,6 +57,5 @@ class ArduinoDebug implements IArduinoDebug {
     Debug(): Thenable<Array<string>> {
         return new Promise((resolve) => { resolve("not implemented"); });
     }
-
 }
 
