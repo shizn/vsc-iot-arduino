@@ -21,7 +21,27 @@
             "treeLabel": "Arduino IoT Explorer",
             "icon": "media/dep.svg",
             "treeExplorerNodeProviderId": "sampleTree"
+            },
+        "languages": [{
+            "id": "arduino",
+            "aliases": ["Arduino", "arduino"],
+            "extensions": [".pde",".ino"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "arduino",
+            "scopeName": "source.c++.arduino",
+            "path": "./syntaxes/Arduino.tmLanguage"
+        }],
+        "snippets": [
+            {
+                "language": "arduino",
+                "path": "./snippets/arduino.json"
             }
+        ],
+        "files.associations": {
+            "*.ino": "arduino"
+        }
     },
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
