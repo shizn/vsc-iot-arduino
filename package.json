@@ -17,6 +17,14 @@
     "icon": "media/dep.png",
     "enableProposedApi": true,
     "contributes": {
+        "commands": [{
+            "command": "extension.arduinoVerify",
+            "title": "Verify (Arduino)"
+        },
+        {
+            "command": "extension.arduinoUpload",
+            "title": "Upload (Arduino)"
+        }],
         "explorer": {
             "treeLabel": "Arduino IoT Explorer",
             "icon": "media/dep.svg",
@@ -49,6 +57,7 @@
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
+        "gulp": "^3.9.1",
         "typescript": "^2.0.3",
         "vscode": "^1.0.0",
         "mocha": "^2.3.3",
