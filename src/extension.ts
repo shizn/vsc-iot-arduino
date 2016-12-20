@@ -21,7 +21,7 @@ var demoConfig = {
       version:'1.6.2'
     }
   ],
-  com: 'COM4',
+  com: 'COM5',
   platform: 'Huzzah Feather M0'
 }
 
@@ -108,10 +108,10 @@ export function activate(context: vscode.ExtensionContext) {
 
   // for DeviceDiscovery
   let deviceDiscoveryCmd = vscode.commands.registerCommand('extension.devdiscovery',() =>{
-      vscode.window.showQuickPick(['Huzzah Feather M0 : COM4', 'Create a new project without device']).then(
+      vscode.window.showQuickPick(['Huzzah Feather M0 : COM5', 'Create a new project without device']).then(
         val => {
           deviceDiscoveryBarItem.text = "Device: " + val;
-          demoGen('COM4', 'Huzzah Feather M0');
+          demoGen('COM5', 'Huzzah Feather M0');
         }
       );
   })

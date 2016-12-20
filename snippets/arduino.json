@@ -382,5 +382,10 @@
 		"body": "\nwhile(${1}){\n    ${2:// statement}\n}\n",
 		"description": "Arduino while",
 		"scope": "source.arduino"
+	},
+	"m0HappypathLesson1": {
+		"prefix": "m0HappypathLesson1",
+		"body": "// Copyright (c) Microsoft. All rights reserved.\n// Licensed under the MIT license. See LICENSE file in the project root for full license information.\n\nconst int LED_PIN = 13; \n\nvoid setup()\n{\n    Serial.begin(115200);\n    Serial.println(\"Blink sample started...\");\n    pinMode(LED_PIN, OUTPUT);\n}\n\nvoid loop()\n{\n    digitalWrite(LED_PIN, HIGH);\n    delay(500);\n    digitalWrite(LED_PIN, LOW);\n    delay(500);\n    Serial.println(\"blinking...\");\n}",
+		"scope": "source.arduino"
 	}
 }
